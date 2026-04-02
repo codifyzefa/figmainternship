@@ -1,0 +1,124 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #EFF6FF; /* lightbg */
+  color: #374151; /* gray-700 */
+  min-height: 100vh;
+}
+
+
+/* ─── Microsoft Teams Design System ─────────────────────────── */
+:root {
+  /* Brilliant Blue (MS primary) */
+  --ms-blue-50:  #e6f2fb;
+  --ms-blue-100: #b0d5f2;
+  --ms-blue-300: #54a5e2;
+  --ms-blue-500: #0078d4;
+  --ms-blue-600: #006dc1;
+  --ms-blue-700: #005597;
+  --ms-blue-900: #002948;
+
+  /* Sky Blue (backgrounds) */
+  --ms-sky-50:  #f4fafd;
+  --ms-sky-100: #dceef8;
+  --ms-sky-200: #cbe6f4;
+  --ms-sky-300: #b3daf0;
+  --ms-sky-500: #8dc8e8;
+
+  /* Teams Purple */
+  --ms-teams-50:  #efeffb;
+  --ms-teams-100: #cdccf2;
+  --ms-teams-300: #9291e2;
+  --ms-teams-500: #5d5bd4;
+  --ms-teams-600: #5553c1;
+  --ms-teams-700: #424197;
+
+  /* Dark Blue (text) */
+  --ms-dark-50:  #eaecf1;
+  --ms-dark-200: #9da9bd;
+  --ms-dark-500: #2a446f;
+  --ms-dark-700: #1e304f;
+  --ms-dark-900: #0e1726;
+
+  /* Neutral */
+  --ms-neutral-50:  #f7f7f7;
+  --ms-neutral-100: #e7e7e7;
+  --ms-neutral-400: #c1c2c2;
+  --ms-neutral-600: #a1a3a3;
+
+  /* Gradients */
+  --ms-gradient-hero: linear-gradient(180deg, #f4fafd 0%, #dceef8 50%, #f4fafd 100%);
+  --ms-gradient-sky:  linear-gradient(90deg, #ede8f6 0%, #f4fafd 50%, #dceef8 100%);
+  --ms-gradient-blue: linear-gradient(135deg, #0078d4 0%, #5d5bd4 100%);
+  --ms-gradient-mesh: linear-gradient(131deg, #cbe6f4 0%, #8dc8e8 50%, #c5b4e3 100%);
+
+  /* Elevation */
+  --ms-shadow-1: 0 0 2px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.14);
+  --ms-shadow-2: 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.14);
+  --ms-shadow-3: 0 0 2px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.14);
+  --ms-shadow-4: 0 0 2px rgba(0,0,0,.12), 0 8px 16px rgba(0,0,0,.14);
+  --ms-shadow-5: 0 0 8px rgba(0,0,0,.12), 0 14px 28px rgba(0,0,0,.14);
+}
+
+/* Base layout styles */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+/* Sidebar nav scrollbar */
+.sidebar-nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+/* SweetAlert2 Toast Close Button */
+.swal2-toast .swal2-close {
+  display: flex !important;
+  font-size: 1.25rem !important;
+  color: inherit !important;
+  opacity: 0.5 !important;
+  background: transparent !important;
+  border: none !important;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  position: absolute !important;
+  top: 10px !important;
+  right: 12px !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+  transition: opacity 0.2s;
+  box-shadow: none !important;
+}
+
+.swal2-toast .swal2-close:hover {
+  opacity: 1 !important;
+}
+
+.swal2-toast .swal2-title {
+  padding-right: 25px !important;
+}
